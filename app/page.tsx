@@ -70,10 +70,10 @@ export default function Home() {
         {/* 항목 1 */}
         <div className="flex items-center justify-between py-8 border-b border-gray-200">
           <div className="flex items-center gap-8 md:gap-16 lg:gap-32">
-            <span className="text-2xl md:text-3xl lg:text-4xl font-semibold w-8">
+            <span className="text-[18px] md:text-[24px] lg:text-[36px] font-semibold w-8">
               1
             </span>
-            <span className="text-2xl md:text-3xl lg:text-4xl font-semibold">
+            <span className="text-[24px] md:text-[32px] lg:text-[48px] font-semibold">
               BUNKERSHOT PARTNERS
             </span>
           </div>
@@ -87,10 +87,10 @@ export default function Home() {
         {/* 항목 2 */}
         <div className="flex items-center justify-between py-8 border-b border-gray-200">
           <div className="flex items-center gap-8 md:gap-16 lg:gap-32">
-            <span className="text-2xl md:text-3xl lg:text-4xl font-semibold w-8">
+            <span className="text-[18px] md:text-[24px] lg:text-[36px] font-semibold w-8">
               2
             </span>
-            <span className="text-2xl md:text-3xl lg:text-4xl font-semibold">
+            <span className="text-[24px] md:text-[32px] lg:text-[48px] font-semibold">
               UX/UI DESIGN
             </span>
           </div>
@@ -104,14 +104,14 @@ export default function Home() {
         {/* 항목 3 */}
         <div className="flex items-center justify-between py-8 border-b border-gray-200">
           <div className="flex items-center gap-8 md:gap-16 lg:gap-32">
-            <span className="text-2xl md:text-3xl lg:text-4xl font-semibold w-8">
+            <span className="text-[18px] md:text-[24px] lg:text-[36px] font-semibold w-8">
               3
             </span>
-            <span className="text-2xl md:text-3xl lg:text-4xl font-semibold">
+            <span className="text-[24px] md:text-[32px] lg:text-[48px] font-semibold">
               BRANDING DESIGN
             </span>
           </div>
-          <div className="text-right text-sm text-gray-600 leading-relaxed">
+          <div className="text-right text-md text-gray-600 leading-relaxed">
             <p>Whew</p>
             <p>Amond</p>
             <p>MeiTalk</p>
@@ -121,10 +121,10 @@ export default function Home() {
         {/* 항목 4 */}
         <div className="flex items-center justify-between py-8 border-b border-gray-200">
           <div className="flex items-center gap-8 md:gap-16 lg:gap-32">
-            <span className="text-2xl md:text-3xl lg:text-4xl font-semibold w-8">
+            <span className="text-[18px] md:text-[24px] lg:text-[36px] font-semibold w-8">
               4
             </span>
-            <span className="text-2xl md:text-3xl lg:text-4xl font-semibold">
+            <span className="text-[24px] md:text-[32px] lg:text-[48px] font-semibold">
               ART WORK
             </span>
           </div>
