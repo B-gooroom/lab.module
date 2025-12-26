@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 
 const texts = ["UX/UI", "APP/WEB", "BRANDING"];
 
@@ -94,10 +94,13 @@ function Cube3D({
 }
 
 export default function FlipBox() {
-  const [activeIndex, setActiveIndex] = useState(0);
   const [rotations, setRotations] = useState([0, 0, 0]);
   const [cubeSize, setCubeSize] = useState(160);
   const [isMounted, setIsMounted] = useState(false);
+
+  // Strict Mode 중복 실행 방지용 ref
+  const intervalRef = useRef<NodeJS.Timeout | null>(null);
+  const activeIndexRef = useRef(0);
 
   // 클라이언트 마운트 확인 (SSR hydration 문제 해결)
   useEffect(() => {
@@ -123,24 +126,33 @@ export default function FlipBox() {
     return () => window.removeEventListener("resize", updateSize);
   }, [isMounted]);
 
-  // 롤링 애니메이션 - useRef로 안정화
+  // 롤링 애니메이션 - useRef로 Strict Mode 중복 실행 방지
   useEffect(() => {
     if (!isMounted) return;
 
-    const interval = setInterval(() => {
-      setActiveIndex((prev) => {
-        const current = prev;
-        // 현재 텍스트를 90도 회전 (박스가 앞으로 굴러감)
-        setRotations((prevRotations) => {
-          const newRotations = [...prevRotations];
-          newRotations[current] -= 90; // 앞으로 굴러가기
-          return newRotations;
-        });
-        return (prev + 1) % texts.length;
+    // 이미 interval이 있으면 중복 생성 방지
+    if (intervalRef.current) return;
+
+    intervalRef.current = setInterval(() => {
+      const current = activeIndexRef.current;
+
+      // 현재 텍스트를 90도 회전 (박스가 앞으로 굴러감)
+      setRotations((prevRotations) => {
+        const newRotations = [...prevRotations];
+        newRotations[current] -= 180;
+        return newRotations;
       });
+
+      // 다음 인덱스로
+      activeIndexRef.current = (current + 1) % texts.length;
     }, 3000);
 
-    return () => clearInterval(interval);
+    return () => {
+      if (intervalRef.current) {
+        clearInterval(intervalRef.current);
+        intervalRef.current = null;
+      }
+    };
   }, [isMounted]);
 
   // 마운트 전에는 렌더링하지 않음 (hydration 불일치 방지)
