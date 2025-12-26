@@ -97,9 +97,17 @@ export default function FlipBox() {
   const [activeIndex, setActiveIndex] = useState(0);
   const [rotations, setRotations] = useState([0, 0, 0]);
   const [cubeSize, setCubeSize] = useState(160);
+  const [isMounted, setIsMounted] = useState(false);
+
+  // 클라이언트 마운트 확인 (SSR hydration 문제 해결)
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
 
   // 화면 크기에 따라 큐브 크기 조정
   useEffect(() => {
+    if (!isMounted) return;
+
     const updateSize = () => {
       if (window.innerWidth < 768) {
         setCubeSize(60); // 모바일
@@ -113,9 +121,12 @@ export default function FlipBox() {
     updateSize();
     window.addEventListener("resize", updateSize);
     return () => window.removeEventListener("resize", updateSize);
-  }, []);
+  }, [isMounted]);
 
+  // 롤링 애니메이션 - useRef로 안정화
   useEffect(() => {
+    if (!isMounted) return;
+
     const interval = setInterval(() => {
       setActiveIndex((prev) => {
         const current = prev;
@@ -130,7 +141,22 @@ export default function FlipBox() {
     }, 3000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [isMounted]);
+
+  // 마운트 전에는 렌더링하지 않음 (hydration 불일치 방지)
+  if (!isMounted) {
+    return (
+      <div className="flex flex-col items-end lg:items-end gap-2 md:gap-4 lg:gap-[20px]">
+        {texts.map((text, index) => (
+          <div key={index} className="h-[60px] md:h-[100px] lg:h-[160px]">
+            <span className="text-[48px] md:text-[80px] lg:text-[128px] font-semibold tracking-tight">
+              {text}
+            </span>
+          </div>
+        ))}
+      </div>
+    );
+  }
 
   return (
     <div className="flex flex-col items-end lg:items-end gap-2 md:gap-4 lg:gap-[20px]">
