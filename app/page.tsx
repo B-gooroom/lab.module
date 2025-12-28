@@ -35,7 +35,6 @@ export default function Home() {
         </div> */}
       </section>
       <p className="h-[150px]"></p>
-
       {/* WORK 섹션 */}
       <section className="flex items-start justify-between mx-4 md:mx-10 lg:mx-20">
         {/* 왼쪽: 라벨 + 타이틀 */}
@@ -55,7 +54,6 @@ export default function Home() {
         </div>
       </section>
       <p className="h-[150px]"></p>
-
       {/* 3D 섹션 - 전체 너비 */}
       <section
         className="w-screen relative left-1/2 -translate-x-1/2 overflow-hidden"
@@ -135,6 +133,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <p className="h-[150px]" />
     </main>
   );
 }
