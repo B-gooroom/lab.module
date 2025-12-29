@@ -4,6 +4,11 @@ import { Canvas, useFrame } from "@react-three/fiber";
 import { Environment, Float } from "@react-three/drei";
 import { useRef } from "react";
 import * as THREE from "three";
+import { BBH_Bartle } from "next/font/google";
+
+const bbhBartle = BBH_Bartle({
+  weight: "400",
+});
 
 // 크롬 토러스 낫 (꼬인 토러스) - 이미지와 비슷한 형태
 function ChromeTorusKnot() {
@@ -55,27 +60,27 @@ export default function Scene3D() {
       </Canvas>
 
       {/* 텍스트 오버레이 - 왼쪽 상단 */}
-      <div className="absolute top-8 left-8 text-white font-bold text-[48px] md:text-[80px] lg:text-[128px] leading-tight">
-        <p>DEVELOPMENT</p>
-        <p>DESIGN</p>
-        <p>WEB</p>
-        <p>APP</p>
+      <div className="absolute top-8 left-8 text-white font-bold text-[48px] md:text-[62px] lg:text-[80px] leading-tight ml-20">
+        <p className={bbhBartle.className}>DEVELOPMENT</p>
+        <p className={bbhBartle.className}>DESIGN</p>
+        <p className={bbhBartle.className}>WEB</p>
+        <p className={bbhBartle.className}>APP</p>
       </div>
 
       {/* 텍스트 오버레이 - 오른쪽 중앙 */}
-      <div className="absolute top-1/2 right-8 -translate-y-1/2 text-white font-bold text-[48px] md:text-[80px] lg:text-[128px] text-right leading-tight">
-        <p>BRANDING</p>
-        <p>UX/UI</p>
+      <div className="absolute top-1/2 right-8 -translate-y-1/2 text-white font-bold  text-[48px] md:text-[62px] lg:text-[100px] text-right leading-tight mx-22">
+        <p className={bbhBartle.className}>BRANDING</p>
+        <p className={bbhBartle.className}>UX/UI</p>
       </div>
 
       {/* 텍스트 오버레이 - 하단 */}
-      <div className="absolute bottom-8 left-8 text-white font-bold text-[48px] md:text-[80px] lg:text-[128px] leading-tight">
-        <p>ART</p>
-        <p>MOTION</p>
+      <div className="absolute bottom-1/5 left-8 text-white font-bold text-[48px] md:text-[80px] lg:text-[120px] leading-tight ml-6">
+        <p className={bbhBartle.className}>ART</p>
+        <p className={bbhBartle.className}>MOTION</p>
       </div>
 
-      <div className="absolute bottom-8 right-8 text-white font-bold text-[48px] md:text-[80px] lg:text-[128px] text-right leading-tight">
-        <p>GRAPHIC</p>
+      <div className="absolute bottom-8 right-8 text-white font-bold text-[48px] md:text-[80px] lg:text-[112px] text-right leading-tight mx-12">
+        <p className={bbhBartle.className}>GRAPHIC</p>
       </div>
     </div>
   );
