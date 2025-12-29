@@ -84,7 +84,7 @@ export default function Contact() {
             </span>
             <input
               type="text"
-              className="text-md text-gray-600 leading-relaxed w-[360px] h-[40px] p-2 outline-none"
+              className="text-md text-gray-600 leading-relaxed w-[440px] h-[40px] p-2 outline-none"
               placeholder="웹사이트, 앱, 브랜딩, 기타 등 진행하시는 프로젝트를 입력해주세요"
             />
           </div>
