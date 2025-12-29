@@ -1,6 +1,50 @@
 "use client";
 
+import Link from "next/link";
 import LogoLoop from "../components/LogoLoop";
+
+export const works = [
+  {
+    title: "Whew APP UI/UX DESIGN",
+    image: "/work_1.jpg",
+    workId: 1,
+  },
+  {
+    title: "아몬드 앱 UI/UX 디자인",
+    image: "/work_2.jpg",
+    workId: 1,
+  },
+  {
+    title: "Real Research APP UI/UX DESIGN",
+    image: "/work_3.jpg",
+    workId: 1,
+  },
+  {
+    title: "하하당 콘텐츠 디자인",
+    image: "/work_4.jpg",
+    workId: 4,
+  },
+  {
+    title: "Buyaladin APP UI/UX DESIGN",
+    image: "/work_5.jpg",
+    workId: 1,
+  },
+  {
+    title: "MeiTalk APP UI/UX DESIGN",
+    image: "/work_6.jpg",
+    workId: 1,
+  },
+  {
+    title: "cafe ma.me Branding Design",
+    image: "/work_7.jpg",
+    workId: 2,
+  },
+  {
+    title: "cafe KISO Illustration",
+    image: "/work_8.jpg",
+    workId: 3,
+  },
+];
 
 export default function Work() {
   return (
@@ -17,78 +61,24 @@ export default function Work() {
         </h1>
         <p className="h-[150px]" />
 
-        <div className="flex flex-col gap-8 md:gap-12">
-          {/* 첫 번째 섹션 */}
-          <div className="flex flex-row gap-8 md:gap-12">
-            <div className="flex-1">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
+          {works.map((work, index) => (
+            <Link
+              href={`/work/${index + 1}?workId=${work.workId}`}
+              key={index}
+              className="group cursor-pointer"
+            >
               <div
-                className="w-full aspect-[4/3] bg-gray-200 mb-4"
+                className="w-full aspect-[4/3] bg-gray-200 mb-4 overflow-hidden"
                 style={{
-                  backgroundImage: `
-                  linear-gradient(45deg, #e5e5e5 25%, transparent 25%),
-                  linear-gradient(-45deg, #e5e5e5 25%, transparent 25%),
-                  linear-gradient(45deg, transparent 75%, #e5e5e5 75%),
-                  linear-gradient(-45deg, transparent 75%, #e5e5e5 75%)
-                `,
-                  backgroundSize: "20px 20px",
-                  backgroundPosition: "0 0, 0 10px, 10px -10px, -10px 0px",
+                  backgroundImage: `url(${work.image})`,
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
                 }}
               />
-              <p className=" text-sm md:text-base">Whew APP UI/UX DESIGN</p>
-            </div>
-            <div className="flex-1">
-              <div
-                className="w-full aspect-[4/3] bg-gray-200 mb-4"
-                style={{
-                  backgroundImage: `
-                  linear-gradient(45deg, #e5e5e5 25%, transparent 25%),
-                  linear-gradient(-45deg, #e5e5e5 25%, transparent 25%),
-                  linear-gradient(45deg, transparent 75%, #e5e5e5 75%),
-                  linear-gradient(-45deg, transparent 75%, #e5e5e5 75%)
-                `,
-                  backgroundSize: "20px 20px",
-                  backgroundPosition: "0 0, 0 10px, 10px -10px, -10px 0px",
-                }}
-              />
-              <p className=" text-sm md:text-base">Whew APP UI/UX DESIGN</p>
-            </div>
-          </div>
-
-          {/* 두 번째 섹션 */}
-          <div className="flex flex-row gap-8 md:gap-12">
-            <div className="flex-1">
-              <div
-                className="w-full aspect-[4/3] bg-gray-200 mb-4"
-                style={{
-                  backgroundImage: `
-                  linear-gradient(45deg, #e5e5e5 25%, transparent 25%),
-                  linear-gradient(-45deg, #e5e5e5 25%, transparent 25%),
-                  linear-gradient(45deg, transparent 75%, #e5e5e5 75%),
-                  linear-gradient(-45deg, transparent 75%, #e5e5e5 75%)
-                `,
-                  backgroundSize: "20px 20px",
-                  backgroundPosition: "0 0, 0 10px, 10px -10px, -10px 0px",
-                }}
-              />
-              <p className=" text-sm md:text-base">Whew APP UI/UX DESIGN</p>
-            </div>
-            <div className="flex-1">
-              <div
-                className="w-full aspect-[4/3] bg-gray-200 mb-4"
-                style={{
-                  backgroundImage: `
-                  linear-gradient(45deg, #e5e5e5 25%, transparent 25%),
-                  linear-gradient(-45deg, #e5e5e5 25%, transparent 25%),
-                  linear-gradient(45deg, transparent 75%, #e5e5e5 75%),
-                  linear-gradient(-45deg, transparent 75%, #e5e5e5 75%)
-                `,
-                  backgroundSize: "20px 20px",
-                  backgroundPosition: "0 0, 0 10px, 10px -10px, -10px 0px",
-                }}
-              />
-              <p className=" text-sm md:text-base">Whew APP UI/UX DESIGN</p>
-            </div>
-          </div>
+              <p className="text-sm md:text-base">{work.title}</p>
+            </Link>
+          ))}
         </div>
         <p className="h-[150px]" />
       </div>
