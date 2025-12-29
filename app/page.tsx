@@ -203,7 +203,7 @@ export default function Home() {
         {/* WORK 섹션 1 */}
         <section
           ref={section1Ref}
-          className="relative z-10 flex items-start justify-between px-4 md:px-10 lg:px-[40px] flex-shrink-0 pt-[150px] pb-[150px] bg-[#5A5B5F]"
+          className="relative z-10 flex items-start justify-between px-4 md:px-10 lg:px-[40px] flex-shrink-0 pt-[150px] pb-[150px] bg-[#111111]"
           style={{
             marginLeft: "calc(-50vw + 50%)",
             marginRight: "calc(-50vw + 50%)",
@@ -241,7 +241,7 @@ export default function Home() {
         {/* WORK 섹션 2 */}
         <section
           ref={section2Ref}
-          className="relative z-20 flex items-start justify-between px-4 md:px-10 lg:px-20 flex-shrink-0 pt-[150px] pb-[150px] bg-[#1a1b1e]"
+          className="relative z-20 flex items-start justify-between px-4 md:px-10 lg:px-20 flex-shrink-0 pt-[150px] pb-[150px] bg-[#5A5B5F]"
           style={{
             marginLeft: "calc(-50vw + 50%)",
             marginRight: "calc(-50vw + 50%)",
@@ -279,7 +279,7 @@ export default function Home() {
         {/* WORK 섹션 3 */}
         <section
           ref={section3Ref}
-          className="relative z-30 flex items-start justify-between px-4 md:px-10 lg:px-20 flex-shrink-0 pt-[150px] pb-[150px] bg-[#5A5B5F]"
+          className="relative z-30 flex items-start justify-between px-4 md:px-10 lg:px-20 flex-shrink-0 pt-[150px] pb-[150px] bg-[#D9DADF]"
           style={{
             marginLeft: "calc(-50vw + 50%)",
             marginRight: "calc(-50vw + 50%)",
@@ -288,13 +288,13 @@ export default function Home() {
           }}
         >
           <div className="work-left flex flex-col gap-[20px] px-[80px]">
-            <span className="text-[16px] text-white/70">WORK</span>
+            <span className="text-[16px] text-black/70">WORK</span>
             <Image
               src="/LOGO.png"
               alt="lab.MODULE"
               width={221}
               height={43}
-              className="invert"
+              // className="invert"
             />
           </div>
           {/* 오른쪽: 프로젝트 카드 */}
@@ -307,7 +307,7 @@ export default function Home() {
               <span className="text-white/40">이미지</span>
             </div>
             {/* 프로젝트 제목 */}
-            <p className="text-lg font-medium text-white">
+            <p className="text-lg font-medium text-black/70">
               Whew APP UI/UX DESIGN
             </p>
           </div>
