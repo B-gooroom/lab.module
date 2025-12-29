@@ -10,7 +10,7 @@ export const works = [
     workId: 1,
   },
   {
-    title: "아몬드 앱 UI/UX 디자인",
+    title: "Amond APP/WEB UI/UX DESIGN",
     image: "/work_2.jpg",
     workId: 1,
   },
@@ -20,7 +20,7 @@ export const works = [
     workId: 1,
   },
   {
-    title: "하하당 콘텐츠 디자인",
+    title: "HoHoDang Content DESIGN",
     image: "/work_4.jpg",
     workId: 4,
   },
@@ -35,7 +35,7 @@ export const works = [
     workId: 1,
   },
   {
-    title: "cafe ma.me Branding Design",
+    title: "cafe ma.me Branding DESIGN",
     image: "/work_7.jpg",
     workId: 2,
   },
