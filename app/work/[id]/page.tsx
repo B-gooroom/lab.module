@@ -39,7 +39,7 @@ export default function WorkDetail() {
       </div>
       <div className="w-full h-full">
         <Image
-          src={`/Detail_work_${workId}.jpg`}
+          src={`/new_detail_work_${workId}.jpg`}
           alt={works[Number(workId) - 1].title}
           width={1000}
           height={1000}
