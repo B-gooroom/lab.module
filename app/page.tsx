@@ -228,12 +228,18 @@ export default function Home() {
             style={{ perspective: "1000px" }}
           >
             {/* 이미지 플레이스홀더 */}
-            <div className="w-[500px] h-[300px] bg-white/10 flex items-center justify-center overflow-hidden rounded-lg mr-[80px]">
-              <span className="text-white/40">이미지</span>
+            <div className="w-[750px] h-[450px] bg-white/10 flex items-center justify-center overflow-hidden rounded-lg mr-[80px]">
+              <Image
+                src="/work_1.jpg"
+                alt="Whew APP UI/UX DESIGN"
+                width={500}
+                height={300}
+                className="w-full h-full object-cover"
+              />
             </div>
             {/* 프로젝트 제목 */}
             <p className="text-lg font-medium text-white">
-              Whew APP UI/UX DESIGN
+              whew APP UI/UX DESIGN
             </p>
           </div>
         </section>
@@ -267,19 +273,25 @@ export default function Home() {
             style={{ perspective: "1000px" }}
           >
             {/* 이미지 플레이스홀더 */}
-            <div className="w-[500px] h-[300px] bg-white/10 flex items-center justify-center overflow-hidden rounded-lg mr-[80px]">
-              <span className="text-white/40">이미지</span>
+            <div className="w-[750px] h-[450px] bg-white/10 flex items-center justify-center overflow-hidden rounded-lg mr-[80px]">
+              <Image
+                src="/work_2.jpg"
+                alt="아몬드 APP/WEB UI/UX DESIGN"
+                width={500}
+                height={300}
+                className="w-full h-full object-cover"
+              />
             </div>
             {/* 프로젝트 제목 */}
             <p className="text-lg font-medium text-white">
-              Whew APP UI/UX DESIGN
+              아몬드 APP/WEB UI/UX DESIGN
             </p>
           </div>
         </section>
         {/* WORK 섹션 3 */}
         <section
           ref={section3Ref}
-          className="relative z-30 flex items-start justify-between px-4 md:px-10 lg:px-20 flex-shrink-0 pt-[150px] pb-[150px] bg-[#D9DADF]"
+          className="relative z-30 flex items-start justify-between px-4 md:px-10 lg:px-20 flex-shrink-0 pt-[150px] pb-[100px] bg-[#D9DADF]"
           style={{
             marginLeft: "calc(-50vw + 50%)",
             marginRight: "calc(-50vw + 50%)",
@@ -303,12 +315,18 @@ export default function Home() {
             style={{ perspective: "1000px" }}
           >
             {/* 이미지 플레이스홀더 */}
-            <div className="w-[500px] h-[300px] bg-white/10 flex items-center justify-center overflow-hidden rounded-lg mr-[80px]">
-              <span className="text-white/40">이미지</span>
+            <div className="w-[750px] h-[450px] bg-white/10 flex items-center justify-center overflow-hidden rounded-lg mr-[80px]">
+              <Image
+                src="/work_4.jpg"
+                alt="HoHoDang Content DESIGN"
+                width={500}
+                height={300}
+                className="w-full h-full object-cover"
+              />
             </div>
             {/* 프로젝트 제목 */}
             <p className="text-lg font-medium text-black/70">
-              Whew APP UI/UX DESIGN
+              HoHoDang Content DESIGN
             </p>
           </div>
         </section>
@@ -344,7 +362,7 @@ export default function Home() {
             </span>
           </div>
           <div className="text-right text-sm text-gray-600 leading-relaxed">
-            <p>Amond</p>
+            <p>아몬드</p>
             <p>Buyaladin</p>
             <p>Real Research</p>
           </div>
@@ -361,7 +379,7 @@ export default function Home() {
             </span>
           </div>
           <div className="text-right text-sm text-gray-600 leading-relaxed">
-            <p>Whew</p>
+            <p>whew</p>
             <p>Amond</p>
             <p>MeiTalk</p>
           </div>
