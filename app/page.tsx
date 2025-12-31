@@ -344,9 +344,9 @@ export default function Home() {
             </span>
           </div>
           <div className="text-right text-sm text-gray-600 leading-relaxed">
-            <p>Whew</p>
             <p>Amond</p>
             <p>Buyaladin</p>
+            <p>Real Research</p>
           </div>
         </div>
 

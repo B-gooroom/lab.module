@@ -43,6 +43,7 @@ export default function WorkDetail() {
           alt={works[Number(workId) - 1].title}
           width={1000}
           height={1000}
+          unoptimized
           className="w-full h-full object-cover"
         />
         <p className="h-[150px]" />
