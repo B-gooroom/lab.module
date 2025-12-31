@@ -24,7 +24,7 @@ export default function WorkDetail() {
   const searchParams = useSearchParams();
   const workId = params.id as string;
   const workCategory = searchParams?.get("workId") as string;
-  console.log("ddd", workId);
+  // console.log("ddd", workId);
 
   return (
     <div className="">
