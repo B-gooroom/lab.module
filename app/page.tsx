@@ -235,6 +235,7 @@ export default function Home() {
                 width={500}
                 height={300}
                 className="w-full h-full object-cover"
+                unoptimized
               />
             </div>
             {/* 프로젝트 제목 */}
@@ -280,6 +281,7 @@ export default function Home() {
                 width={500}
                 height={300}
                 className="w-full h-full object-cover"
+                unoptimized
               />
             </div>
             {/* 프로젝트 제목 */}
@@ -322,6 +324,7 @@ export default function Home() {
                 width={500}
                 height={300}
                 className="w-full h-full object-cover"
+                unoptimized
               />
             </div>
             {/* 프로젝트 제목 */}
