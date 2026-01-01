@@ -172,7 +172,6 @@ export default function Home() {
 
   return (
     <main className="">
-      {/* DESIGN 섹션 */}
       <section className="flex flex-row items-start justify-between mx-4 md:mx-10 lg:mx-20 flex-shrink-0 pt-[150px] pb-[150px]">
         {/* 왼쪽: 타이틀 + 설명 */}
         <div className="flex flex-col gap-3 md:gap-[20px] max-w-[50%]">

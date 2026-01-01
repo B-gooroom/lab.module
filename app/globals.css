@@ -32,3 +32,33 @@ body {
 .animate-spin-slow {
   animation: spin-slow 20s linear infinite;
 }
+
+/* ============================================
+   Liquid Glass Header
+   노이즈 오버레이 + 애니메이션으로 유리 텍스처
+   ============================================ */
+
+.liquidHeader {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  isolation: isolate;
+  overflow: hidden;
+
+  /* 반투명 배경 */
+  background: rgba(255, 255, 255, 0.55);
+
+  /* Blur + 색상 보정 */
+  backdrop-filter: blur(2px) saturate(130%);
+  -webkit-backdrop-filter: blur(2px) saturate(130%);
+
+  /* Specular Highlights - 일렁이는 애니메이션 */
+  box-shadow: inset 10px 10px 20px rgba(153, 192, 255, 0.1),
+    inset 2px 2px 5px rgba(195, 218, 255, 0.2),
+    inset -10px -10px 20px rgba(229, 253, 190, 0.1),
+    inset -2px -2px 30px rgba(247, 255, 226, 0.2);
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+}
