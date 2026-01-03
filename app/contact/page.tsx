@@ -60,9 +60,9 @@ export default function Contact() {
         <p className="h-[40px] md:h-[80px]" />
 
         {/* NAME */}
-        <div className="flex flex-col md:flex-row md:items-center justify-between py-[20px] pb-[12px] md:py-[16px] border-b border-[#111111]">
+        <div className="flex flex-col md:flex-row md:items-center justify-between pt-[12px] pb-[6px] md:py-[16px] border-b border-[#111111]">
           <div className="flex items-center gap-3 md:gap-8 lg:gap-32">
-            <span className="text-[14px] md:text-[20px] lg:text-[30px] font-semibold w-6 md:w-8 md:ml-[50px]">
+            <span className="text-[14px] md:text-[20px] lg:text-[30px] font-semibold w-[10px] md:w-8 md:ml-[50px]">
               1
             </span>
             <span className="text-[14px] md:text-[20px] lg:text-[30px] font-semibold md:w-[360px]">
@@ -73,15 +73,15 @@ export default function Contact() {
             type="text"
             value={name}
             onChange={(e) => setName(e.target.value)}
-            className="text-[12px] md:text-md text-gray-600 leading-relaxed w-full md:w-[360px] h-[36px] md:h-[40px] p-2 outline-none"
+            className="text-[12px] md:text-md text-gray-600 leading-relaxed w-full md:w-[360px] h-[36px] md:h-[40px] pl-[4px] lg:pl-2 outline-none"
             placeholder="이름을 입력해주세요"
           />
         </div>
 
         {/* COMPANY */}
-        <div className="flex flex-col md:flex-row md:items-center justify-between pt-[20px] pb-[12px] md:py-[16px] border-b border-[#111111]">
+        <div className="flex flex-col md:flex-row md:items-center justify-between pt-[12px] pb-[6px] md:py-[16px] border-b border-[#111111]">
           <div className="flex items-center gap-3 md:gap-8 lg:gap-32">
-            <span className="text-[14px] md:text-[20px] lg:text-[30px] font-semibold w-6 md:w-8 md:ml-[50px]">
+            <span className="text-[14px] md:text-[20px] lg:text-[30px] font-semibold w-[10px] md:w-8 md:ml-[50px]">
               2
             </span>
             <span className="text-[14px] md:text-[20px] lg:text-[30px] font-semibold md:w-[360px]">
@@ -92,15 +92,15 @@ export default function Contact() {
             type="text"
             value={company}
             onChange={(e) => setCompany(e.target.value)}
-            className="text-[12px] md:text-md text-gray-600 leading-relaxed w-full md:w-[360px] h-[36px] md:h-[40px] p-2 outline-none"
+            className="text-[12px] md:text-md text-gray-600 leading-relaxed w-full md:w-[360px] h-[36px] md:h-[40px] pl-[4px] lg:pl-2 outline-none"
             placeholder="회사명을 입력해주세요"
           />
         </div>
 
         {/* E-MAIL */}
-        <div className="flex flex-col md:flex-row md:items-center justify-between pt-[20px] pb-[12px] md:py-[16px] border-b border-[#111111]">
+        <div className="flex flex-col md:flex-row md:items-center justify-between pt-[12px] pb-[6px] md:py-[16px] border-b border-[#111111]">
           <div className="flex items-center gap-3 md:gap-8 lg:gap-32">
-            <span className="text-[14px] md:text-[20px] lg:text-[30px] font-semibold w-6 md:w-8 md:ml-[50px]">
+            <span className="text-[14px] md:text-[20px] lg:text-[30px] font-semibold w-[10px] md:w-8 md:ml-[50px]">
               3
             </span>
             <span className="text-[14px] md:text-[20px] lg:text-[30px] font-semibold md:w-[360px]">
@@ -111,15 +111,15 @@ export default function Contact() {
             type="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="text-[12px] md:text-md text-gray-600 leading-relaxed w-full md:w-[360px] h-[36px] md:h-[40px] p-2 outline-none"
+            className="text-[12px] md:text-md text-gray-600 leading-relaxed w-full md:w-[360px] h-[36px] md:h-[40px] pl-[4px] lg:pl-2 outline-none"
             placeholder="이메일을 입력해주세요"
           />
         </div>
 
         {/* TEL */}
-        <div className="flex flex-col md:flex-row md:items-center justify-between pt-[20px] pb-[12px] md:py-[16px] border-b border-[#111111]">
+        <div className="flex flex-col md:flex-row md:items-center justify-between pt-[12px] pb-[6px] md:py-[16px] border-b border-[#111111]">
           <div className="flex items-center gap-3 md:gap-8 lg:gap-32">
-            <span className="text-[14px] md:text-[20px] lg:text-[30px] font-semibold w-6 md:w-8 md:ml-[50px]">
+            <span className="text-[14px] md:text-[20px] lg:text-[30px] font-semibold w-[10px] md:w-8 md:ml-[50px]">
               4
             </span>
             <span className="text-[14px] md:text-[20px] lg:text-[30px] font-semibold md:w-[360px]">
@@ -130,15 +130,15 @@ export default function Contact() {
             type="tel"
             value={tel}
             onChange={(e) => setTel(e.target.value)}
-            className="text-[12px] md:text-md text-gray-600 leading-relaxed w-full md:w-[360px] h-[36px] md:h-[40px] p-2 outline-none"
+            className="text-[12px] md:text-md text-gray-600 leading-relaxed w-full md:w-[360px] h-[36px] md:h-[40px] pl-[4px] lg:pl-2 outline-none"
             placeholder="연락처를 입력해주세요"
           />
         </div>
 
         {/* PROJECT FIELD */}
-        <div className="flex flex-col md:flex-row md:items-center justify-between pt-[20px] pb-[12px] md:py-[16px]">
+        <div className="flex flex-col md:flex-row md:items-center justify-between pt-[12px] pb-[6px] md:py-[16px]">
           <div className="flex items-center gap-3 md:gap-8 lg:gap-32">
-            <span className="text-[14px] md:text-[20px] lg:text-[30px] font-semibold w-6 md:w-8 md:ml-[50px]">
+            <span className="text-[14px] md:text-[20px] lg:text-[30px] font-semibold w-[10px] md:w-8 md:ml-[50px]">
               5
             </span>
             <span className="text-[14px] md:text-[20px] lg:text-[30px] font-semibold md:w-[360px]">
@@ -149,7 +149,7 @@ export default function Contact() {
             type="text"
             value={projectField}
             onChange={(e) => setProjectField(e.target.value)}
-            className="text-[12px] md:text-md text-gray-600 leading-relaxed w-full md:w-[440px] h-[36px] md:h-[40px] p-2 outline-none"
+            className="text-[12px] md:text-md text-gray-600 leading-relaxed w-full md:w-[440px] h-[36px] md:h-[40px] pl-[4px] lg:pl-2 outline-none"
             placeholder="웹사이트, 앱, 브랜딩, 기타 등"
           />
         </div>
