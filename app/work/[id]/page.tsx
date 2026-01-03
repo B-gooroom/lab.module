@@ -28,8 +28,8 @@ export default function WorkDetail() {
 
   return (
     <div className="">
-      <div className="px-[80px] md:px-8 lg:px-20 xl:px-[80px]">
-        <p className="h-[80px]" />
+      <div className="px-[20px] md:px-8 lg:px-[80px] xl:px-[80px]">
+        <p className="h-[40px] lg:h-[80px]" />
         <p className="">{worksCategory[Number(workCategory) - 1].category}</p>
         <p className="h-[20px]" />
         <p className="text-[24px] font-bold">

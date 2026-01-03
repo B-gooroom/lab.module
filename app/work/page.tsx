@@ -49,17 +49,17 @@ export const works = [
 export default function Work() {
   return (
     <div>
-      <p className="h-[150px]" />
+      <p className="h-[60px] lg:h-[150px]" />
       <div className="relative w-full overflow-hidden">
         <LogoLoop />
       </div>
-      <p className="h-[150px]" />
+      <p className="h-[40px] lg:h-[150px]" />
 
-      <div className="px-[80px] md:px-8 lg:px-20 xl:px-[80px] pt-12 ">
+      <div className="px-[20px] md:px-8 lg:px-[80px] xl:px-[80px] pt-12 ">
         <h1 className="text-[48px] md:text-[64px] lg:text-[80px] xl:text-[128px] font-bold">
           WORK_
         </h1>
-        <p className="h-[150px]" />
+        <p className="h-[60px] lg:h-[150px]" />
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
           {works.map((work, index) => (
