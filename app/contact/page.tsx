@@ -60,7 +60,7 @@ export default function Contact() {
         <p className="h-[40px] md:h-[80px]" />
 
         {/* NAME */}
-        <div className="flex flex-col md:flex-row md:items-center justify-between py-[20px] md:py-[16px] border-b border-[#111111]">
+        <div className="flex flex-col md:flex-row md:items-center justify-between py-[20px] pb-[12px] md:py-[16px] border-b border-[#111111]">
           <div className="flex items-center gap-3 md:gap-8 lg:gap-32">
             <span className="text-[14px] md:text-[20px] lg:text-[30px] font-semibold w-6 md:w-8 md:ml-[50px]">
               1
@@ -79,7 +79,7 @@ export default function Contact() {
         </div>
 
         {/* COMPANY */}
-        <div className="flex flex-col md:flex-row md:items-center justify-between py-[20px] md:py-[16px] border-b border-[#111111]">
+        <div className="flex flex-col md:flex-row md:items-center justify-between pt-[20px] pb-[12px] md:py-[16px] border-b border-[#111111]">
           <div className="flex items-center gap-3 md:gap-8 lg:gap-32">
             <span className="text-[14px] md:text-[20px] lg:text-[30px] font-semibold w-6 md:w-8 md:ml-[50px]">
               2
@@ -98,7 +98,7 @@ export default function Contact() {
         </div>
 
         {/* E-MAIL */}
-        <div className="flex flex-col md:flex-row md:items-center justify-between py-[20px] md:py-[16px] border-b border-[#111111]">
+        <div className="flex flex-col md:flex-row md:items-center justify-between pt-[20px] pb-[12px] md:py-[16px] border-b border-[#111111]">
           <div className="flex items-center gap-3 md:gap-8 lg:gap-32">
             <span className="text-[14px] md:text-[20px] lg:text-[30px] font-semibold w-6 md:w-8 md:ml-[50px]">
               3
@@ -117,7 +117,7 @@ export default function Contact() {
         </div>
 
         {/* TEL */}
-        <div className="flex flex-col md:flex-row md:items-center justify-between py-[20px] md:py-[16px] border-b border-[#111111]">
+        <div className="flex flex-col md:flex-row md:items-center justify-between pt-[20px] pb-[12px] md:py-[16px] border-b border-[#111111]">
           <div className="flex items-center gap-3 md:gap-8 lg:gap-32">
             <span className="text-[14px] md:text-[20px] lg:text-[30px] font-semibold w-6 md:w-8 md:ml-[50px]">
               4
@@ -136,7 +136,7 @@ export default function Contact() {
         </div>
 
         {/* PROJECT FIELD */}
-        <div className="flex flex-col md:flex-row md:items-center justify-between py-[20px] md:py-[16px]">
+        <div className="flex flex-col md:flex-row md:items-center justify-between pt-[20px] pb-[12px] md:py-[16px]">
           <div className="flex items-center gap-3 md:gap-8 lg:gap-32">
             <span className="text-[14px] md:text-[20px] lg:text-[30px] font-semibold w-6 md:w-8 md:ml-[50px]">
               5

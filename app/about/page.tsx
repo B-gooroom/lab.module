@@ -86,7 +86,7 @@ export default function About() {
       <hr className="border-t border-[#171717] mb-12 md:mb-16 lg:mb-20 mx-4 md:mx-8 lg:mx-20 xl:mx-[80px]" />
 
       {/* 하단 섹션 - 모바일: 회색 배경 */}
-      <div className="flex flex-col gap-6 md:gap-8 lg:gap-10 px-[20px] md:px-8 lg:px-20 xl:px-[80px] py-[40px] md:py-0 bg-[#F5F5F5] md:bg-transparent">
+      <div className="flex flex-col gap-6 md:gap-8 lg:gap-10 px-[20px] md:px-8 lg:px-20 xl:px-[80px] py-[40px] md:py-0">
         <div className="w-full max-w-[160px] md:max-w-[349px]">
           <Image
             src="/LOGO.png"
