@@ -53,100 +53,111 @@ export default function Contact() {
   };
   return (
     <div>
-      <div className="px-[80px] md:px-8 lg:px-20 xl:px-[80px] pt-12 ">
-        <h1 className="text-[48px] md:text-[64px] lg:text-[80px] xl:text-[128px] font-bold">
+      <div className="px-[20px] md:px-8 lg:px-20 xl:px-[80px] pt-[40px] md:pt-12">
+        <h1 className="text-[40px] md:text-[64px] lg:text-[80px] xl:text-[128px] font-bold">
           CONTACT_
         </h1>
-        <p className="h-[80px]" />
-        <div className="flex items-center justify-between py-[16px] border-b border-[#111111] gap-8 md:gap-16 lg:gap-32">
-          <div className="flex items-center gap-8 md:gap-16 lg:gap-32">
-            <span className="text-[16px] md:text-[20px] lg:text-[30px] font-semibold w-8 ml-[50px]">
+        <p className="h-[40px] md:h-[80px]" />
+
+        {/* NAME */}
+        <div className="flex flex-col md:flex-row md:items-center justify-between py-[20px] md:py-[16px] border-b border-[#111111]">
+          <div className="flex items-center gap-3 md:gap-8 lg:gap-32">
+            <span className="text-[14px] md:text-[20px] lg:text-[30px] font-semibold w-6 md:w-8 md:ml-[50px]">
               1
             </span>
-            <span className="text-[16px] md:text-[20px] lg:text-[30px] font-semibold w-[360px]">
+            <span className="text-[14px] md:text-[20px] lg:text-[30px] font-semibold md:w-[360px]">
               NAME*
             </span>
-            <input
-              type="text"
-              value={name}
-              onChange={(e) => setName(e.target.value)}
-              className="text-md text-gray-600 leading-relaxed w-[360px] h-[40px] p-2 outline-none"
-              placeholder="이름을 입력해주세요"
-            />
           </div>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className="text-[12px] md:text-md text-gray-600 leading-relaxed w-full md:w-[360px] h-[36px] md:h-[40px] p-2 outline-none"
+            placeholder="이름을 입력해주세요"
+          />
         </div>
-        <div className="flex items-center justify-between py-[16px] border-b border-[#111111] gap-8 md:gap-16 lg:gap-32">
-          <div className="flex items-center gap-8 md:gap-16 lg:gap-32">
-            <span className="text-[16px] md:text-[20px] lg:text-[30px] font-semibold w-8 ml-[50px]">
+
+        {/* COMPANY */}
+        <div className="flex flex-col md:flex-row md:items-center justify-between py-[20px] md:py-[16px] border-b border-[#111111]">
+          <div className="flex items-center gap-3 md:gap-8 lg:gap-32">
+            <span className="text-[14px] md:text-[20px] lg:text-[30px] font-semibold w-6 md:w-8 md:ml-[50px]">
               2
             </span>
-            <span className="text-[16px] md:text-[20px] lg:text-[30px] font-semibold w-[360px]">
+            <span className="text-[14px] md:text-[20px] lg:text-[30px] font-semibold md:w-[360px]">
               COMPANY*
             </span>
-            <input
-              type="text"
-              value={company}
-              onChange={(e) => setCompany(e.target.value)}
-              className="text-md text-gray-600 leading-relaxed w-[360px] h-[40px] p-2 outline-none"
-              placeholder="회사명을 입력해주세요"
-            />
           </div>
+          <input
+            type="text"
+            value={company}
+            onChange={(e) => setCompany(e.target.value)}
+            className="text-[12px] md:text-md text-gray-600 leading-relaxed w-full md:w-[360px] h-[36px] md:h-[40px] p-2 outline-none"
+            placeholder="회사명을 입력해주세요"
+          />
         </div>
-        <div className="flex items-center justify-between py-[16px] border-b border-[#111111] gap-8 md:gap-16 lg:gap-32">
-          <div className="flex items-center gap-8 md:gap-16 lg:gap-32">
-            <span className="text-[16px] md:text-[20px] lg:text-[30px] font-semibold w-8 ml-[50px]">
+
+        {/* E-MAIL */}
+        <div className="flex flex-col md:flex-row md:items-center justify-between py-[20px] md:py-[16px] border-b border-[#111111]">
+          <div className="flex items-center gap-3 md:gap-8 lg:gap-32">
+            <span className="text-[14px] md:text-[20px] lg:text-[30px] font-semibold w-6 md:w-8 md:ml-[50px]">
               3
             </span>
-            <span className="text-[16px] md:text-[20px] lg:text-[30px] font-semibold w-[360px]">
+            <span className="text-[14px] md:text-[20px] lg:text-[30px] font-semibold md:w-[360px]">
               E-MAIL*
             </span>
-            <input
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              className="text-md text-gray-600 leading-relaxed w-[360px] h-[40px] p-2 outline-none"
-              placeholder="이메일을 입력해주세요"
-            />
           </div>
+          <input
+            type="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            className="text-[12px] md:text-md text-gray-600 leading-relaxed w-full md:w-[360px] h-[36px] md:h-[40px] p-2 outline-none"
+            placeholder="이메일을 입력해주세요"
+          />
         </div>
-        <div className="flex items-center justify-between py-[16px] border-b border-[#111111] gap-8 md:gap-16 lg:gap-32">
-          <div className="flex items-center gap-8 md:gap-16 lg:gap-32">
-            <span className="text-[16px] md:text-[20px] lg:text-[30px] font-semibold w-8 ml-[50px]">
+
+        {/* TEL */}
+        <div className="flex flex-col md:flex-row md:items-center justify-between py-[20px] md:py-[16px] border-b border-[#111111]">
+          <div className="flex items-center gap-3 md:gap-8 lg:gap-32">
+            <span className="text-[14px] md:text-[20px] lg:text-[30px] font-semibold w-6 md:w-8 md:ml-[50px]">
               4
             </span>
-            <span className="text-[16px] md:text-[20px] lg:text-[30px] font-semibold w-[360px]">
+            <span className="text-[14px] md:text-[20px] lg:text-[30px] font-semibold md:w-[360px]">
               TEL*
             </span>
-            <input
-              type="tel"
-              value={tel}
-              onChange={(e) => setTel(e.target.value)}
-              className="text-md text-gray-600 leading-relaxed w-[360px] h-[40px] p-2 outline-none"
-              placeholder="연락처를 입력해주세요"
-            />
           </div>
+          <input
+            type="tel"
+            value={tel}
+            onChange={(e) => setTel(e.target.value)}
+            className="text-[12px] md:text-md text-gray-600 leading-relaxed w-full md:w-[360px] h-[36px] md:h-[40px] p-2 outline-none"
+            placeholder="연락처를 입력해주세요"
+          />
         </div>
-        <div className="flex items-center justify-between py-[16px]">
-          <div className="flex items-center gap-8 md:gap-16 lg:gap-32">
-            <span className="text-[16px] md:text-[20px] lg:text-[30px] font-semibold w-8 ml-[50px]">
+
+        {/* PROJECT FIELD */}
+        <div className="flex flex-col md:flex-row md:items-center justify-between py-[20px] md:py-[16px]">
+          <div className="flex items-center gap-3 md:gap-8 lg:gap-32">
+            <span className="text-[14px] md:text-[20px] lg:text-[30px] font-semibold w-6 md:w-8 md:ml-[50px]">
               5
             </span>
-            <span className="text-[16px] md:text-[20px] lg:text-[30px] font-semibold w-[360px]">
+            <span className="text-[14px] md:text-[20px] lg:text-[30px] font-semibold md:w-[360px]">
               PROJECT FIELD
             </span>
-            <input
-              type="text"
-              value={projectField}
-              onChange={(e) => setProjectField(e.target.value)}
-              className="text-md text-gray-600 leading-relaxed w-[440px] h-[40px] p-2 outline-none"
-              placeholder="웹사이트, 앱, 브랜딩, 기타 등 진행하시는 프로젝트를 입력해주세요"
-            />
           </div>
+          <input
+            type="text"
+            value={projectField}
+            onChange={(e) => setProjectField(e.target.value)}
+            className="text-[12px] md:text-md text-gray-600 leading-relaxed w-full md:w-[440px] h-[36px] md:h-[40px] p-2 outline-none"
+            placeholder="웹사이트, 앱, 브랜딩, 기타 등"
+          />
         </div>
-        <p className="h-[80px]" />
+
+        <p className="h-[40px] md:h-[80px]" />
         {message && (
           <p
-            className={`text-center mb-4 ${
+            className={`text-center mb-4 text-[14px] md:text-base ${
               message.includes("성공") ? "text-green-600" : "text-red-500"
             }`}
           >
@@ -154,13 +165,13 @@ export default function Contact() {
           </p>
         )}
         <button
-          className="w-full h-[56px] bg-black text-white text-[16px] font-semibold cursor-pointer disabled:bg-gray-400 disabled:cursor-not-allowed"
+          className="w-full h-[48px] md:h-[56px] bg-black text-white text-[14px] md:text-[16px] font-semibold cursor-pointer disabled:bg-gray-400 disabled:cursor-not-allowed"
           onClick={handleConnect}
           disabled={!name || !company || !email || !tel || isLoading}
         >
           {isLoading ? "SENDING..." : "CONNECTING"}
         </button>
-        <p className="h-[150px]" />
+        <p className="h-[80px] md:h-[150px]" />
       </div>
       <div className="relative w-full overflow-hidden">
         <LogoLoop />
