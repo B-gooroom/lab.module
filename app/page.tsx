@@ -172,10 +172,10 @@ export default function Home() {
 
   return (
     <main className="">
-      <section className="flex flex-row items-start justify-between mx-4 md:mx-10 lg:mx-20 flex-shrink-0 pt-[150px] pb-[150px]">
+      <section className="flex flex-col md:flex-row items-start justify-between mx-[20px] md:mx-10 lg:mx-[80px] flex-shrink-0 pt-[40px] md:pt-[150px] pb-[80px] md:pb-[150px] gap-8 md:gap-0">
         {/* 왼쪽: 타이틀 + 설명 */}
-        <div className="flex flex-col gap-3 md:gap-[20px] max-w-[50%]">
-          <h2 className="text-[48px] md:text-[80px] lg:text-[128px] font-semibold tracking-tight leading-none">
+        <div className="flex flex-col gap-3 md:gap-[20px] w-full md:max-w-[50%]">
+          <h2 className="text-[40px] md:text-[80px] lg:text-[128px] font-semibold tracking-tight leading-none">
             DESIGN
           </h2>
           <p className="text-[14px] md:text-[16px] leading-relaxed text-gray-700">
@@ -187,7 +187,9 @@ export default function Home() {
           </p>
         </div>
         {/* 오른쪽: 3D 플립 박스 텍스트 */}
-        <FlipBox />
+        <div className="self-end md:self-start">
+          <FlipBox />
+        </div>
       </section>
 
       <section
@@ -202,7 +204,7 @@ export default function Home() {
         {/* WORK 섹션 1 */}
         <section
           ref={section1Ref}
-          className="relative z-10 flex items-start justify-between px-4 md:px-10 lg:px-[40px] flex-shrink-0 pt-[150px] pb-[150px] bg-[#111111]"
+          className="relative z-10 flex flex-col md:flex-row items-start justify-between px-4 md:px-10 lg:px-[40px] flex-shrink-0 pt-[80px] md:pt-[150px] pb-[80px] md:pb-[150px] bg-[#111111] gap-6 md:gap-0"
           style={{
             marginLeft: "calc(-50vw + 50%)",
             marginRight: "calc(-50vw + 50%)",
@@ -210,24 +212,26 @@ export default function Home() {
             paddingRight: "calc(50vw - 50% + 1rem)",
           }}
         >
-          <div className="work-left flex flex-col gap-[20px] px-[80px]">
-            <span className="text-[16px] text-white/70">WORK</span>
+          <div className="work-left flex flex-col gap-[12px] md:gap-[20px] px-0 md:px-[80px]">
+            <span className="text-[14px] md:text-[16px] text-white/70">
+              WORK
+            </span>
             <Image
               src="/LOGO.png"
               alt="lab.MODULE"
               width={221}
               height={43}
-              className="invert"
+              className="invert w-[140px] md:w-[221px] h-auto"
             />
           </div>
 
           {/* 오른쪽: 프로젝트 카드 */}
           <div
-            className="work-right flex flex-col gap-4"
+            className="work-right flex flex-col gap-3 md:gap-4 w-full md:w-auto"
             style={{ perspective: "1000px" }}
           >
             {/* 이미지 플레이스홀더 */}
-            <div className="w-[750px] h-[450px] bg-white/10 flex items-center justify-center overflow-hidden rounded-lg mr-[80px]">
+            <div className="w-full md:w-[750px] aspect-[16/10] md:h-[450px] bg-white/10 flex items-center justify-center overflow-hidden rounded-lg md:mr-[80px]">
               <Image
                 src="/work_1.jpg"
                 alt="Whew APP UI/UX DESIGN"
@@ -238,7 +242,7 @@ export default function Home() {
               />
             </div>
             {/* 프로젝트 제목 */}
-            <p className="text-lg font-medium text-white">
+            <p className="text-base md:text-lg font-medium text-white">
               whew APP UI/UX DESIGN
             </p>
           </div>
@@ -247,33 +251,34 @@ export default function Home() {
         {/* WORK 섹션 2 */}
         <section
           ref={section2Ref}
-          className="relative z-20 flex items-start justify-between px-4 md:px-10 lg:px-20 flex-shrink-0 pt-[150px] pb-[150px] bg-[#5A5B5F]"
+          className="relative z-20 flex flex-col md:flex-row items-start justify-between px-4 md:px-10 lg:px-20 flex-shrink-0 pt-[80px] md:pt-[150px] pb-[80px] md:pb-[150px] bg-[#5A5B5F] gap-6 md:gap-0"
           style={{
             marginLeft: "calc(-50vw + 50%)",
             marginRight: "calc(-50vw + 50%)",
             paddingLeft: "calc(50vw - 50% + 1rem)",
             paddingRight: "calc(50vw - 50% + 1rem)",
-            // boxShadow: "0 -30px 80px rgba(0,0,0,0.6)",
           }}
         >
-          <div className="work-left flex flex-col gap-[20px] px-[80px]">
-            <span className="text-[16px] text-white/70 ">WORK</span>
+          <div className="work-left flex flex-col gap-[12px] md:gap-[20px] px-0 md:px-[80px]">
+            <span className="text-[14px] md:text-[16px] text-white/70">
+              WORK
+            </span>
             <Image
               src="/LOGO.png"
               alt="lab.MODULE"
               width={221}
               height={43}
-              className="invert"
+              className="invert w-[140px] md:w-[221px] h-auto"
             />
           </div>
 
           {/* 오른쪽: 프로젝트 카드 */}
           <div
-            className="work-right flex flex-col gap-4"
+            className="work-right flex flex-col gap-3 md:gap-4 w-full md:w-auto"
             style={{ perspective: "1000px" }}
           >
             {/* 이미지 플레이스홀더 */}
-            <div className="w-[750px] h-[450px] bg-white/10 flex items-center justify-center overflow-hidden rounded-lg mr-[80px]">
+            <div className="w-full md:w-[750px] aspect-[16/10] md:h-[450px] bg-white/10 flex items-center justify-center overflow-hidden rounded-lg md:mr-[80px]">
               <Image
                 src="/work_2.jpg"
                 alt="아몬드 APP/WEB UI/UX DESIGN"
@@ -284,7 +289,7 @@ export default function Home() {
               />
             </div>
             {/* 프로젝트 제목 */}
-            <p className="text-lg font-medium text-white">
+            <p className="text-base md:text-lg font-medium text-white">
               아몬드 APP/WEB UI/UX DESIGN
             </p>
           </div>
@@ -292,7 +297,7 @@ export default function Home() {
         {/* WORK 섹션 3 */}
         <section
           ref={section3Ref}
-          className="relative z-30 flex items-start justify-between px-4 md:px-10 lg:px-20 flex-shrink-0 pt-[150px] pb-[100px] bg-[#D9DADF]"
+          className="relative z-30 flex flex-col md:flex-row items-start justify-between px-4 md:px-10 lg:px-20 flex-shrink-0 pt-[80px] md:pt-[150px] pb-[60px] md:pb-[100px] bg-[#D9DADF] gap-6 md:gap-0"
           style={{
             marginLeft: "calc(-50vw + 50%)",
             marginRight: "calc(-50vw + 50%)",
@@ -300,23 +305,25 @@ export default function Home() {
             paddingRight: "calc(50vw - 50% + 1rem)",
           }}
         >
-          <div className="work-left flex flex-col gap-[20px] px-[80px]">
-            <span className="text-[16px] text-black/70">WORK</span>
+          <div className="work-left flex flex-col gap-[12px] md:gap-[20px] px-0 md:px-[80px]">
+            <span className="text-[14px] md:text-[16px] text-black/70">
+              WORK
+            </span>
             <Image
               src="/LOGO.png"
               alt="lab.MODULE"
               width={221}
               height={43}
-              // className="invert"
+              className="w-[140px] md:w-[221px] h-auto"
             />
           </div>
           {/* 오른쪽: 프로젝트 카드 */}
           <div
-            className="work-right flex flex-col gap-4"
+            className="work-right flex flex-col gap-3 md:gap-4 w-full md:w-auto"
             style={{ perspective: "1000px" }}
           >
             {/* 이미지 플레이스홀더 */}
-            <div className="w-[750px] h-[450px] bg-white/10 flex items-center justify-center overflow-hidden rounded-lg mr-[80px]">
+            <div className="w-full md:w-[750px] aspect-[16/10] md:h-[450px] bg-white/10 flex items-center justify-center overflow-hidden rounded-lg md:mr-[80px]">
               <Image
                 src="/work_4.jpg"
                 alt="HoHoDang Content DESIGN"
@@ -327,7 +334,7 @@ export default function Home() {
               />
             </div>
             {/* 프로젝트 제목 */}
-            <p className="text-lg font-medium text-black/70">
+            <p className="text-base md:text-lg font-medium text-black/70">
               HoHoDang Content DESIGN
             </p>
           </div>
@@ -335,18 +342,18 @@ export default function Home() {
       </div>
 
       {/* 작업 리스트 섹션 */}
-      <section className="px-4 md:px-10 lg:px-20 pt-[150px] pb-[150px] flex-shrink-0">
+      <section className="px-4 md:px-10 lg:px-20 pt-[80px] md:pt-[150px] pb-[60px] md:pb-[150px] flex-shrink-0">
         {/* 항목 1 */}
-        <div className="flex items-center justify-between py-8 border-y border-[#111111]">
-          <div className="flex items-center gap-8 md:gap-16 lg:gap-32">
-            <span className="text-[18px] md:text-[24px] lg:text-[36px] font-semibold w-8">
+        <div className="flex md:flex-row md:items-center justify-between py-4 md:py-8 border-y border-[#111111] gap-2 md:gap-0">
+          <div className="flex items-center gap-4 md:gap-16 lg:gap-32">
+            <span className="text-[14px] md:text-[24px] lg:text-[36px] font-semibold w-6 md:w-8">
               1
             </span>
-            <span className="text-[24px] md:text-[32px] lg:text-[48px] font-semibold">
+            <span className="text-[14px] md:text-[32px] lg:text-[48px] lg:font-semibold">
               BUNKERSHOT PARTNERS
             </span>
           </div>
-          <div className="text-right text-sm text-gray-600 leading-relaxed">
+          <div className="text-left md:text-right text-[10px] md:text-[16px] font-light text-gray-600 leading-relaxed min-w-[84px]">
             <p>STAR-UP APP</p>
             <p>UX/UI DESIGN</p>
             <p>MVP PROTOTYPE</p>
@@ -354,16 +361,16 @@ export default function Home() {
         </div>
 
         {/* 항목 2 */}
-        <div className="flex items-center justify-between py-8 border-b border-[#111111]">
-          <div className="flex items-center gap-8 md:gap-16 lg:gap-32">
-            <span className="text-[18px] md:text-[24px] lg:text-[36px] font-semibold w-8">
+        <div className="flex md:flex-row md:items-center justify-between py-4 md:py-8 border-b border-[#111111] gap-2 md:gap-0">
+          <div className="flex items-center gap-4 md:gap-16 lg:gap-32">
+            <span className="text-[14px] md:text-[24px] lg:text-[36px] font-semibold w-6 md:w-8">
               2
             </span>
-            <span className="text-[24px] md:text-[32px] lg:text-[48px] font-semibold">
+            <span className="text-[14px] md:text-[32px] lg:text-[48px] lg:font-semibold">
               UX/UI DESIGN
             </span>
           </div>
-          <div className="text-right text-sm text-gray-600 leading-relaxed">
+          <div className="text-left md:text-right text-[10px] md:text-[16px] font-light text-gray-600 leading-relaxed min-w-[84px]">
             <p>아몬드</p>
             <p>Buyaladin</p>
             <p>Real Research</p>
@@ -371,16 +378,16 @@ export default function Home() {
         </div>
 
         {/* 항목 3 */}
-        <div className="flex items-center justify-between py-8 border-b border-[#111111]">
-          <div className="flex items-center gap-8 md:gap-16 lg:gap-32">
-            <span className="text-[18px] md:text-[24px] lg:text-[36px] font-semibold w-8">
+        <div className="flex md:flex-row md:items-center justify-between py-4 md:py-8 border-b border-[#111111] gap-2 md:gap-0">
+          <div className="flex items-center gap-4 md:gap-16 lg:gap-32">
+            <span className="text-[14px] md:text-[24px] lg:text-[36px] font-semibold w-6 md:w-8">
               3
             </span>
-            <span className="text-[24px] md:text-[32px] lg:text-[48px] font-semibold">
+            <span className="text-[14px] md:text-[32px] lg:text-[48px] lg:font-semibold">
               BRANDING DESIGN
             </span>
           </div>
-          <div className="text-right text-sm text-gray-600 leading-relaxed">
+          <div className="text-left md:text-right text-[10px] md:text-[16px] font-light text-gray-600 leading-relaxed min-w-[84px]">
             <p>whew</p>
             <p>Amond</p>
             <p>MeiTalk</p>
@@ -388,16 +395,16 @@ export default function Home() {
         </div>
 
         {/* 항목 4 */}
-        <div className="flex items-center justify-between py-8 border-b border-[#111111]">
-          <div className="flex items-center gap-8 md:gap-16 lg:gap-32">
-            <span className="text-[18px] md:text-[24px] lg:text-[36px] font-semibold w-8">
+        <div className="flex md:flex-row md:items-center justify-between py-4 md:py-8 border-b border-[#111111] gap-2 md:gap-0">
+          <div className="flex items-center gap-4 md:gap-16 lg:gap-32">
+            <span className="text-[14px] md:text-[24px] lg:text-[36px] font-semibold w-6 md:w-8">
               4
             </span>
-            <span className="text-[24px] md:text-[32px] lg:text-[48px] font-semibold">
+            <span className="text-[14px] md:text-[32px] lg:text-[48px] lg:font-semibold">
               ART WORK
             </span>
           </div>
-          <div className="text-right text-sm text-gray-600 leading-relaxed">
+          <div className="text-left md:text-right text-[10px] md:text-[16px] font-light text-gray-600 leading-relaxed min-w-[84px]">
             <p>Hahadang</p>
             <p>KISO</p>
             <p>ma.me</p>

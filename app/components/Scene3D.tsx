@@ -60,7 +60,7 @@ export default function Scene3D() {
       </Canvas>
 
       {/* 텍스트 오버레이 - 왼쪽 상단 */}
-      <div className="absolute top-8 left-8 text-white font-bold text-[48px] md:text-[62px] lg:text-[80px] leading-tight ml-20">
+      <div className="absolute top-8 left-8 text-white font-bold text-[20px] md:text-[62px] lg:text-[80px] leading-tight lg:ml-20">
         <p className={bbhBartle.className}>DEVELOPMENT</p>
         <p className={bbhBartle.className}>DESIGN</p>
         <p className={bbhBartle.className}>WEB</p>
@@ -68,18 +68,18 @@ export default function Scene3D() {
       </div>
 
       {/* 텍스트 오버레이 - 오른쪽 중앙 */}
-      <div className="absolute top-1/2 right-8 -translate-y-1/2 text-white font-bold  text-[48px] md:text-[62px] lg:text-[100px] text-right leading-tight mx-22">
+      <div className="absolute top-1/2 right-8 -translate-y-1/2 text-white font-bold text-[24px] md:text-[62px] lg:text-[100px] text-right leading-tight lg:mx-22">
         <p className={bbhBartle.className}>BRANDING</p>
         <p className={bbhBartle.className}>UX/UI</p>
       </div>
 
       {/* 텍스트 오버레이 - 하단 */}
-      <div className="absolute bottom-1/5 left-8 text-white font-bold text-[48px] md:text-[80px] lg:text-[120px] leading-tight ml-6">
+      <div className="absolute bottom-1/5 left-8 text-white font-bold text-[26px] md:text-[80px] lg:text-[120px] leading-tight lg:ml-6">
         <p className={bbhBartle.className}>ART</p>
         <p className={bbhBartle.className}>MOTION</p>
       </div>
 
-      <div className="absolute bottom-8 right-8 text-white font-bold text-[48px] md:text-[80px] lg:text-[112px] text-right leading-tight mx-12">
+      <div className="absolute bottom-8 right-8 text-white font-bold text-[20px] md:text-[80px] lg:text-[112px] text-right leading-tight lg:mx-12">
         <p className={bbhBartle.className}>GRAPHIC</p>
       </div>
     </div>

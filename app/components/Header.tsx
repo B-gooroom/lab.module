@@ -9,10 +9,10 @@ import Link from "next/link";
 export default function Header() {
   return (
     <header className="liquidHeader">
-      <div className="relative z-10 flex items-center justify-between px-20 py-8">
+      <div className="relative z-10 flex items-center justify-between px-4 md:px-20 py-4 md:py-8">
         <Link href="/">
           <Image
-            className="w-[134px] h-[20px]"
+            className="w-[90px] md:w-[134px] h-auto"
             src="/LOGO.png"
             alt="lab.MODULE"
             width={134}
@@ -23,7 +23,7 @@ export default function Header() {
         </Link>
 
         <nav>
-          <ul className="flex gap-8 text-[16px] font-semibold text-black/90">
+          <ul className="flex gap-4 md:gap-8 text-[12px] md:text-[16px] font-semibold text-black/90">
             <li>
               <a
                 href="/about"

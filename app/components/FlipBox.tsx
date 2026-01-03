@@ -45,7 +45,7 @@ function Cube3D({
             backfaceVisibility: "hidden",
           }}
         >
-          <span className="text-[48px] md:text-[80px] lg:text-[128px] font-semibold tracking-tight">
+          <span className="text-[40px] md:text-[80px] lg:text-[128px] font-semibold tracking-tight">
             {text}
           </span>
         </div>
@@ -58,7 +58,7 @@ function Cube3D({
             backfaceVisibility: "hidden",
           }}
         >
-          <span className="text-[48px] md:text-[80px] lg:text-[128px] font-semibold tracking-tight text-gray-300">
+          <span className="text-[40px] md:text-[80px] lg:text-[128px] font-semibold tracking-tight text-gray-300">
             {text}
           </span>
         </div>
@@ -71,7 +71,7 @@ function Cube3D({
             backfaceVisibility: "hidden",
           }}
         >
-          <span className="text-[48px] md:text-[80px] lg:text-[128px] font-semibold tracking-tight">
+          <span className="text-[40px] md:text-[80px] lg:text-[128px] font-semibold tracking-tight">
             {text}
           </span>
         </div>
@@ -84,7 +84,7 @@ function Cube3D({
             backfaceVisibility: "hidden",
           }}
         >
-          <span className="text-[48px] md:text-[80px] lg:text-[128px] font-semibold tracking-tight text-gray-300">
+          <span className="text-[40px] md:text-[80px] lg:text-[128px] font-semibold tracking-tight text-gray-300">
             {text}
           </span>
         </div>
@@ -113,7 +113,7 @@ export default function FlipBox() {
 
     const updateSize = () => {
       if (window.innerWidth < 768) {
-        setCubeSize(60); // 모바일
+        setCubeSize(64); // 모바일 (375px 기준)
       } else if (window.innerWidth < 1024) {
         setCubeSize(100); // 태블릿
       } else {
@@ -158,10 +158,10 @@ export default function FlipBox() {
   // 마운트 전에는 렌더링하지 않음 (hydration 불일치 방지)
   if (!isMounted) {
     return (
-      <div className="flex flex-col items-end lg:items-end gap-2 md:gap-4 lg:gap-[20px]">
+      <div className="flex flex-col items-end lg:items-end gap-1 md:gap-4 lg:gap-[20px]">
         {texts.map((text, index) => (
-          <div key={index} className="h-[60px] md:h-[100px] lg:h-[160px]">
-            <span className="text-[48px] md:text-[80px] lg:text-[128px] font-semibold tracking-tight">
+          <div key={index} className="h-[32px] md:h-[100px] lg:h-[160px]">
+            <span className="text-[40px] md:text-[80px] lg:text-[128px] font-semibold tracking-tight">
               {text}
             </span>
           </div>
@@ -171,7 +171,7 @@ export default function FlipBox() {
   }
 
   return (
-    <div className="flex flex-col items-end lg:items-end gap-2 md:gap-4 lg:gap-[20px]">
+    <div className="flex flex-col items-end lg:items-end gap-1 md:gap-4 lg:gap-[20px]">
       {texts.map((text, index) => (
         <Cube3D
           key={index}
