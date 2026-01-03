@@ -9,7 +9,7 @@ import Link from "next/link";
 export default function Header() {
   return (
     <header className="liquidHeader">
-      <div className="relative z-10 flex items-center justify-between px-4 md:px-20 py-4 md:py-8">
+      <div className="relative z-10 flex items-center justify-between px-[20px] md:px-20 py-4 md:py-8">
         <Link href="/">
           <Image
             className="w-[90px] md:w-[134px] h-auto"
