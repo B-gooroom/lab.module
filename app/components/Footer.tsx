@@ -40,6 +40,7 @@ export default function Footer() {
             REGISTRATION No.
           </span>
           <span className="text-xs md:text-md text-gray-600">541-12-03059</span>
+          <span className="text-xs md:text-md text-gray-600">통신판매업	2026-서울송파-0347</span>
         </div>
 
         {/* COPYRIGHT */}
